@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TNTKeychainItemWrapper.h"
 
 @interface TNTAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) TNTKeychainItemWrapper *sharedKeychain;
 
 @end

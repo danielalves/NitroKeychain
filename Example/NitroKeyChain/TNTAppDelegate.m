@@ -1,3 +1,4 @@
+
 //
 //  TNTAppDelegate.m
 //  NitroKeyChain
@@ -8,12 +9,30 @@
 
 #import "TNTAppDelegate.h"
 
+static NSString *const keychainIdentifier = @"nitro.keychain.identifier";
+static NSString *const keychainAccessGroup = @"nitro.keychain.accessgroup";
+static NSString *const keychainAppName = @"nitro.keychain.appname";
+
 @implementation TNTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [self.sharedKeychain resetKeychainItem];
     return YES;
+}
+
+- (TNTKeychainItemWrapper *)sharedKeychain
+{
+    static TNTKeychainItemWrapper *keychain = nil;
+    @synchronized(self) {
+        if (!keychain) {
+            keychain = [[TNTKeychainItemWrapper alloc] initWithIdentifier:keychainIdentifier
+                                                              accessGroup:keychainAccessGroup
+                                                          applicationName:keychainAppName
+                                                  setAccountAutomatically:YES];
+        }
+    }
+    return keychain;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

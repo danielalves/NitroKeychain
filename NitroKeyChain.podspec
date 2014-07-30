@@ -1,12 +1,3 @@
-#
-# Be sure to run `pod lib lint NitroKeyChain.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# Any lines starting with a # are optional, but encouraged
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "NitroKeyChain"
   s.version          = "0.1.0"
@@ -17,20 +8,14 @@ Pod::Spec.new do |s|
                        * Markdown format.
                        * Don't worry about the indent, we strip it!
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/NitroKeyChain"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/danielalves/NitroKeyChain"
   s.license          = 'MIT'
-  s.author           = { "Gustavo Barbosa" => "gustavocsb@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/NitroKeyChain.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "globo.tv app team" => "globo.tv.app@corp.globo.com" }
+  s.source           = { :git => "https://github.com/danielalves/NitroKeyChain.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '5.0' # check
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes'
   s.resources = 'Pod/Assets/*.png'
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
