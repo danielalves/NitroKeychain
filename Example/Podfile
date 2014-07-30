@@ -1,0 +1,10 @@
+target 'NitroKeyChain', :exclusive => true do
+  pod "NitroKeyChain", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "NitroKeyChain", :path => "../"
+
+  pod 'Specta', '~> 0.2.1'
+  pod 'Expecta'
+end
