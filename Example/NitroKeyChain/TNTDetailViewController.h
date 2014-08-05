@@ -1,5 +1,5 @@
 /*
- File: TNTAppDelegate.m
+ File: TNTDetailViewController.h
  Abstract:
  Objective-C wrapper for accessing a single keychain item.
  
@@ -46,19 +46,17 @@
  Copyright (C) 2010 Apple Inc. All Rights Reserved.
  
  */
-#import "TNTAppDelegate.h"
 
-#import "TNTKeychainItemWrapper.h"
-#import "TNTDetailViewController.h"
+#import <UIKit/UIKit.h>
 
-@implementation TNTAppDelegate
+@class TNTKeychainItemWrapper;
+@class TNTEditorController;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    [_window addSubview:_navigationController.view];
-    [_window makeKeyAndVisible];
-    
-    return YES;
-}
+@interface TNTDetailViewController : UIViewController
+
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) IBOutlet TNTEditorController *textFieldController;
+@property (nonatomic, strong) TNTKeychainItemWrapper *passwordItem;
+@property (nonatomic, strong) TNTKeychainItemWrapper *accountNumberItem;
 
 @end

@@ -1,5 +1,5 @@
 /*
- File: TNTAppDelegate.m
+ File: TNTEditorController.m
  Abstract:
  Objective-C wrapper for accessing a single keychain item.
  
@@ -46,19 +46,40 @@
  Copyright (C) 2010 Apple Inc. All Rights Reserved.
  
  */
-#import "TNTAppDelegate.h"
-
+#import "TNTEditorController.h"
 #import "TNTKeychainItemWrapper.h"
-#import "TNTDetailViewController.h"
 
-@implementation TNTAppDelegate
+@implementation TNTEditorController
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+- (void)awakeFromNib
 {
-    [_window addSubview:_navigationController.view];
-    [_window makeKeyAndVisible];
-    
-    return YES;
+    self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    [_textControl setFont:[UIFont boldSystemFontOfSize:16]];
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (IBAction)cancel:(id)sender
+{
+    // cancel edits
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)save:(id)sender
+{
+    // save edits
+    [TNTKeychainItemWrapper save:_editedFieldKey data:_textControl.text];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [_textControl becomeFirstResponder];
+    [_textControl setText:[TNTKeychainItemWrapper load:_editedFieldKey]];
 }
 
 @end

@@ -13,17 +13,21 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* TNTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* TNTAppDelegate.m */; };
-		6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6003F59F195388D20070C39A /* Main_iPhone.storyboard */; };
-		6003F5A4195388D20070C39A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A2195388D20070C39A /* Main_iPad.storyboard */; };
-		6003F5A7195388D20070C39A /* TNTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* TNTViewController.m */; };
-		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		80ECE5AACC8D478CB61E0A6B /* libPods-NitroKeyChain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D3DCB07F3F4A8BBEE19B32 /* libPods-NitroKeyChain.a */; };
-		E4C04B851989891300D7EC67 /* TNTAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C04B841989891300D7EC67 /* TNTAddViewController.m */; };
+		E4BEA14D19911F7400665C98 /* TNTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BEA14C19911F7400665C98 /* TNTDetailViewController.m */; };
+		E4BEA150199120E000665C98 /* TNTEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BEA14F199120E000665C98 /* TNTEditorController.m */; };
+		E4BEA1521991554700665C98 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4BEA1511991554700665C98 /* Images.xcassets */; };
+		E4BEA1581991567400665C98 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4BEA1541991567400665C98 /* Info.plist */; };
+		E4BEA1591991567400665C98 /* Info2.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4BEA1551991567400665C98 /* Info2.plist */; };
+		E4BEA15A1991567400665C98 /* KeychainAccessGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4BEA1561991567400665C98 /* KeychainAccessGroups.plist */; };
+		E4BEA15B1991567400665C98 /* KeychainAccessGroups2.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4BEA1571991567400665C98 /* KeychainAccessGroups2.plist */; };
+		E4BEA1601991568900665C98 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4BEA15C1991568900665C98 /* MainWindow.xib */; };
+		E4BEA1611991568900665C98 /* MainWindow2.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4BEA15E1991568900665C98 /* MainWindow2.xib */; };
 		FE7455B9BF794FB5A7AD11F8 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E19FF37251C46A890608C11 /* libPods-Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -50,11 +54,6 @@
 		6003F59B195388D20070C39A /* NitroKeyChain-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NitroKeyChain-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* TNTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNTAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* TNTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNTAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A0195388D20070C39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		6003F5A3195388D20070C39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* TNTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNTViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* TNTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNTViewController.m; sourceTree = "<group>"; };
-		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
@@ -66,8 +65,17 @@
 		C3C574D6BCF149EC97E2741A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D2B0D2DEFC174C6A9E50E548 /* Pods-Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.xcconfig"; path = "Pods/Pods-Tests.xcconfig"; sourceTree = "<group>"; };
 		D941EE1BAF384229B60FB9AA /* Pods-NitroKeyChain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NitroKeyChain.xcconfig"; path = "Pods/Pods-NitroKeyChain.xcconfig"; sourceTree = "<group>"; };
-		E4C04B831989891300D7EC67 /* TNTAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTAddViewController.h; sourceTree = "<group>"; };
-		E4C04B841989891300D7EC67 /* TNTAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTAddViewController.m; sourceTree = "<group>"; };
+		E4BEA14B19911F7400665C98 /* TNTDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTDetailViewController.h; sourceTree = "<group>"; };
+		E4BEA14C19911F7400665C98 /* TNTDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTDetailViewController.m; sourceTree = "<group>"; };
+		E4BEA14E199120E000665C98 /* TNTEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTEditorController.h; sourceTree = "<group>"; };
+		E4BEA14F199120E000665C98 /* TNTEditorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTEditorController.m; sourceTree = "<group>"; };
+		E4BEA1511991554700665C98 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E4BEA1541991567400665C98 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4BEA1551991567400665C98 /* Info2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info2.plist; sourceTree = "<group>"; };
+		E4BEA1561991567400665C98 /* KeychainAccessGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KeychainAccessGroups.plist; sourceTree = "<group>"; };
+		E4BEA1571991567400665C98 /* KeychainAccessGroups2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KeychainAccessGroups2.plist; sourceTree = "<group>"; };
+		E4BEA15D1991568900665C98 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		E4BEA15F1991568900665C98 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,16 +142,15 @@
 		6003F593195388D20070C39A /* NitroKeyChain */ = {
 			isa = PBXGroup;
 			children = (
+				E4BEA1531991566C00665C98 /* Resources */,
 				6003F59C195388D20070C39A /* TNTAppDelegate.h */,
 				6003F59D195388D20070C39A /* TNTAppDelegate.m */,
-				6003F59F195388D20070C39A /* Main_iPhone.storyboard */,
-				6003F5A2195388D20070C39A /* Main_iPad.storyboard */,
-				6003F5A5195388D20070C39A /* TNTViewController.h */,
-				6003F5A6195388D20070C39A /* TNTViewController.m */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
+				E4BEA14B19911F7400665C98 /* TNTDetailViewController.h */,
+				E4BEA14C19911F7400665C98 /* TNTDetailViewController.m */,
+				E4BEA14E199120E000665C98 /* TNTEditorController.h */,
+				E4BEA14F199120E000665C98 /* TNTEditorController.m */,
+				E4BEA1511991554700665C98 /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
-				E4C04B831989891300D7EC67 /* TNTAddViewController.h */,
-				E4C04B841989891300D7EC67 /* TNTAddViewController.m */,
 			);
 			path = NitroKeyChain;
 			sourceTree = "<group>";
@@ -186,6 +193,19 @@
 				3579A9EE527E48639BA642D1 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		E4BEA1531991566C00665C98 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E4BEA15C1991568900665C98 /* MainWindow.xib */,
+				E4BEA15E1991568900665C98 /* MainWindow2.xib */,
+				E4BEA1541991567400665C98 /* Info.plist */,
+				E4BEA1551991567400665C98 /* Info2.plist */,
+				E4BEA1561991567400665C98 /* KeychainAccessGroups.plist */,
+				E4BEA1571991567400665C98 /* KeychainAccessGroups2.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,10 +289,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5A4195388D20070C39A /* Main_iPad.storyboard in Resources */,
-				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */,
+				E4BEA1601991568900665C98 /* MainWindow.xib in Resources */,
+				E4BEA1521991554700665C98 /* Images.xcassets in Resources */,
+				E4BEA15B1991567400665C98 /* KeychainAccessGroups2.plist in Resources */,
+				E4BEA15A1991567400665C98 /* KeychainAccessGroups.plist in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				E4BEA1581991567400665C98 /* Info.plist in Resources */,
+				E4BEA1591991567400665C98 /* Info2.plist in Resources */,
+				E4BEA1611991568900665C98 /* MainWindow2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,10 +378,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4BEA14D19911F7400665C98 /* TNTDetailViewController.m in Sources */,
+				E4BEA150199120E000665C98 /* TNTEditorController.m in Sources */,
 				6003F59E195388D20070C39A /* TNTAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* TNTViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				E4C04B851989891300D7EC67 /* TNTAddViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,28 +412,28 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		6003F59F195388D20070C39A /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6003F5A0195388D20070C39A /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		6003F5A2195388D20070C39A /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6003F5A3195388D20070C39A /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6003F5B9195388D20070C39A /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E4BEA15C1991568900665C98 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4BEA15D1991568900665C98 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		E4BEA15E1991568900665C98 /* MainWindow2.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4BEA15F1991568900665C98 /* en */,
+			);
+			name = MainWindow2.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -497,6 +521,7 @@
 				GCC_PREFIX_HEADER = "NitroKeyChain/NitroKeyChain-Prefix.pch";
 				INFOPLIST_FILE = "NitroKeyChain/NitroKeyChain-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -511,6 +536,7 @@
 				GCC_PREFIX_HEADER = "NitroKeyChain/NitroKeyChain-Prefix.pch";
 				INFOPLIST_FILE = "NitroKeyChain/NitroKeyChain-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

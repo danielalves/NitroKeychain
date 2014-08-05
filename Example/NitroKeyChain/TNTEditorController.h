@@ -1,5 +1,5 @@
 /*
- File: TNTAppDelegate.m
+ File: TNTEditorController.h
  Abstract:
  Objective-C wrapper for accessing a single keychain item.
  
@@ -46,19 +46,19 @@
  Copyright (C) 2010 Apple Inc. All Rights Reserved.
  
  */
-#import "TNTAppDelegate.h"
+#import <UIKit/UIKit.h>
 
-#import "TNTKeychainItemWrapper.h"
-#import "TNTDetailViewController.h"
+@class TNTKeychainItemWrapper;
 
-@implementation TNTAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    [_window addSubview:_navigationController.view];
-    [_window makeKeyAndVisible];
-    
-    return YES;
-}
+@interface TNTEditorController : UIViewController
+
+//@property (nonatomic, strong) NSString *textValue;
+@property (nonatomic, strong) NSString *editedFieldKey;
+@property (nonatomic, strong) IBOutlet UITextField *textControl;
+@property (nonatomic, strong) TNTKeychainItemWrapper *keychainItemWrapper;
+
+- (IBAction)cancel:(id)sender;
+- (IBAction)save:(id)sender;
 
 @end
