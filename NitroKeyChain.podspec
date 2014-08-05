@@ -13,9 +13,8 @@ Pod::Spec.new do |s|
   s.author           = { "globo.tv app team" => "globo.tv.app@corp.globo.com" }
   s.source           = { :git => "https://github.com/danielalves/NitroKeyChain.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '5.0' # check
+  s.platform     = :ios, '6.0'
   s.requires_arc = true
-
   s.source_files = 'Pod/Classes'
-  s.resources = 'Pod/Assets/*.png'
+  s.frameworks   = 'Security'
 end
