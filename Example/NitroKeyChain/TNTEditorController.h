@@ -48,7 +48,7 @@
  */
 #import <UIKit/UIKit.h>
 
-@class TNTKeychainItemWrapper;
+@class TNTKeychain;
 
 
 @interface TNTEditorController : UIViewController
@@ -56,7 +56,7 @@
 //@property (nonatomic, strong) NSString *textValue;
 @property (nonatomic, strong) NSString *editedFieldKey;
 @property (nonatomic, strong) IBOutlet UITextField *textControl;
-@property (nonatomic, strong) TNTKeychainItemWrapper *keychainItemWrapper;
+@property (nonatomic, strong) TNTKeychain *keychainItemWrapper;
 
 - (IBAction)cancel:(id)sender;
 - (IBAction)save:(id)sender;

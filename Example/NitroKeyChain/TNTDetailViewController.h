@@ -49,14 +49,14 @@
 
 #import <UIKit/UIKit.h>
 
-@class TNTKeychainItemWrapper;
+@class TNTKeychain;
 @class TNTEditorController;
 
 @interface TNTDetailViewController : UIViewController
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) IBOutlet TNTEditorController *textFieldController;
-@property (nonatomic, strong) TNTKeychainItemWrapper *passwordItem;
-@property (nonatomic, strong) TNTKeychainItemWrapper *accountNumberItem;
+@property (nonatomic, strong) TNTKeychain *passwordItem;
+@property (nonatomic, strong) TNTKeychain *accountNumberItem;
 
 @end

@@ -48,7 +48,7 @@
  */
 #import "TNTAppDelegate.h"
 
-#import "TNTKeychainItemWrapper.h"
+#import "TNTKeychain.h"
 #import "TNTDetailViewController.h"
 
 @implementation TNTAppDelegate

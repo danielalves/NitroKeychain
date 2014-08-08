@@ -49,7 +49,7 @@
 #import <UIKit/UIKit.h>
 
 @class TNTDetailViewController;
-@class TNTKeychainItemWrapper;
+@class TNTKeychain;
 
 @interface TNTAppDelegate : UIResponder <UIApplicationDelegate>
 

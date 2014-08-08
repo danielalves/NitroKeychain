@@ -52,7 +52,7 @@
 #import "TNTDetailViewController.h"
 
 #import "TNTDetailViewController.h"
-#import "TNTKeychainItemWrapper.h"
+#import "TNTKeychain.h"
 #import "TNTEditorController.h"
 
 static NSString *const kNitroKeychainUsername = @"NitroKeychainUsername";
@@ -123,9 +123,9 @@ static NSInteger kPasswordTag   = 2;    // Tag table view cells that contain a t
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
     // the user clicked one of the OK/Cancel buttons
     if (buttonIndex == 0) {
-        [TNTKeychainItemWrapper delete:kNitroKeychainUsername];
-        [TNTKeychainItemWrapper delete:kNitroKeychainPassword];
-        [TNTKeychainItemWrapper delete:kNitroKeychainAccount];
+        [TNTKeychain delete:kNitroKeychainUsername];
+        [TNTKeychain delete:kNitroKeychainPassword];
+        [TNTKeychain delete:kNitroKeychainAccount];
         [self.tableView reloadData];
     }
 }
@@ -201,7 +201,7 @@ static NSInteger kPasswordTag   = 2;    // Tag table view cells that contain a t
                 cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kUsernameCellIdentifier];
             }
             
-            cell.textLabel.text = [TNTKeychainItemWrapper load:kNitroKeychainUsername];
+            cell.textLabel.text = [TNTKeychain load:kNitroKeychainUsername];
             cell.accessoryType = (self.editing) ? UITableViewCellAccessoryDisclosureIndicator : UITableViewCellAccessoryNone;
             
             break;
@@ -234,9 +234,9 @@ static NSInteger kPasswordTag   = 2;    // Tag table view cells that contain a t
             }
             
             if (indexPath.section == kPasswordSection)
-                textField.text = [TNTKeychainItemWrapper load:kNitroKeychainPassword];
+                textField.text = [TNTKeychain load:kNitroKeychainPassword];
             else
-                textField.text = [TNTKeychainItemWrapper load:kNitroKeychainAccount];
+                textField.text = [TNTKeychain load:kNitroKeychainAccount];
             
             cell.accessoryType = (self.editing) ? UITableViewCellAccessoryDisclosureIndicator : UITableViewCellAccessoryNone;
             

@@ -47,7 +47,7 @@
  
  */
 #import "TNTEditorController.h"
-#import "TNTKeychainItemWrapper.h"
+#import "TNTKeychain.h"
 
 @implementation TNTEditorController
 
@@ -72,14 +72,14 @@
 - (IBAction)save:(id)sender
 {
     // save edits
-    [TNTKeychainItemWrapper save:_editedFieldKey data:_textControl.text];
+    [TNTKeychain save:_editedFieldKey data:_textControl.text];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [_textControl becomeFirstResponder];
-    [_textControl setText:[TNTKeychainItemWrapper load:_editedFieldKey]];
+    [_textControl setText:[TNTKeychain load:_editedFieldKey]];
 }
 
 @end

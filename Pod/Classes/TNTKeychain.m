@@ -1,10 +1,10 @@
 
-#import "TNTKeychainItemWrapper.h"
+#import "TNTKeychain.h"
 #import <Security/Security.h>
 
 #pragma mark - Implementation
 
-@implementation TNTKeychainItemWrapper
+@implementation TNTKeychain
 
 + (NSMutableDictionary *)getKeychainQuery:(NSString *)service {
     return [NSMutableDictionary dictionaryWithObjectsAndKeys:
