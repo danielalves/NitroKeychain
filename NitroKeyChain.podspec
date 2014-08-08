@@ -1,12 +1,9 @@
 Pod::Spec.new do |s|
   s.name             = "NitroKeyChain"
   s.version          = "0.1.0"
-  s.summary          = "A short description of NitroKeyChain."
+  s.summary          = "Apple's keychain without pain."
   s.description      = <<-DESC
-                       An optional longer description of NitroKeyChain
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       NitroKeychain is an iOS library to store and load items from keychain easily. 
                        DESC
   s.homepage         = "https://github.com/danielalves/NitroKeyChain"
   s.license          = 'MIT'
