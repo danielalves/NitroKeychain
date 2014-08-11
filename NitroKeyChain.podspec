@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "NitroKeyChain"
-  s.version          = "0.1.0"
+  s.version          = "1.0.0"
   s.summary          = "Apple's keychain without pain."
   s.description      = <<-DESC
                        NitroKeychain is an iOS library to store and load items from keychain easily. 
