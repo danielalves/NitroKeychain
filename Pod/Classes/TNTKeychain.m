@@ -18,11 +18,13 @@
 
 + (void)save:(NSString *)service data:(id)data
 {
-    NSMutableDictionary *keychainQuery = [self getKeychainQuery:service];
-    SecItemDelete((__bridge CFDictionaryRef)keychainQuery);
-    [keychainQuery setObject:[NSKeyedArchiver archivedDataWithRootObject:data]
-                      forKey:(__bridge id)kSecValueData];
-    SecItemAdd((__bridge CFDictionaryRef)keychainQuery, NULL);
+    @synchronized(self) {
+        NSMutableDictionary *keychainQuery = [self getKeychainQuery:service];
+        SecItemDelete((__bridge CFDictionaryRef)keychainQuery);
+        [keychainQuery setObject:[NSKeyedArchiver archivedDataWithRootObject:data]
+                          forKey:(__bridge id)kSecValueData];
+        SecItemAdd((__bridge CFDictionaryRef)keychainQuery, NULL);
+    }
 }
 
 + (id)load:(NSString *)service
@@ -56,8 +58,10 @@
 
 + (void)delete:(NSString *)service
 {
-    NSMutableDictionary *keychainQuery = [self getKeychainQuery:service];
-    SecItemDelete((__bridge CFDictionaryRef)keychainQuery);
+    @synchronized(self) {
+        NSMutableDictionary *keychainQuery = [self getKeychainQuery:service];
+        SecItemDelete((__bridge CFDictionaryRef)keychainQuery);
+    }
 }
 
 @end
