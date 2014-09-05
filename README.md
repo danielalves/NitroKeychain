@@ -1,7 +1,10 @@
 NitroKeychain
 =============
+[![Version](http://cocoapod-badges.herokuapp.com/v/NitroKeychain/badge.png)](http://cocoadocs.org/docsets/NitroKeychain)
+[![Platform](http://cocoapod-badges.herokuapp.com/p/NitroKeychain/badge.png)](http://cocoadocs.org/docsets/NitroKeychain)
+[![TravisCI](https://travis-ci.org/danielalves/NitroKeychain.svg?branch=master)](https://travis-ci.org/danielalves/NitroKeychain)
 
-NitroKeychain is a simple abstraction layer to deal with Apple's Keychain on iOS.
+**NitroKeychain** is a simple abstraction layer to deal with Apple's Keychain on iOS.
 
 It has basically 3 operations: `save`, `load` and `delete` items from Keychain, as you can see below:
 
