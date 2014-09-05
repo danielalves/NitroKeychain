@@ -27,3 +27,22 @@ Deleting
 ```
 
 Simple as that :+1:
+
+Requirements
+------------
+
+iOS 6.0 or higher, ARC only
+
+Installation
+------------
+
+**NitroKeychain** is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
+
+```ruby
+pod 'NitroKeychain'
+```
+
+License
+-------
+
+**NitroKeychain** is available under the MIT license. See the LICENSE file for more info.
