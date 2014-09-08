@@ -1,7 +1,0 @@
-target 'NitroKeychainDemo', :exclusive => true do
-  pod "NitroKeychain", :path => "../"
-end
-
-target 'NitroKeychainDemoTests', :exclusive => true do
-  pod "NitroKeychain", :path => "../"
-end
