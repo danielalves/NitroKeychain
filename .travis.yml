@@ -1,5 +1,7 @@
-# reference: http://www.objc.io/issue-6/travis-ci.html
-
 language: objective-c
+before_script:
+    - brew update
+    - brew install xctool && brew cleanup xctool
 script:
-- xctool test -workspace Example/NitroKeyChain.xcworkspace -scheme NitroKeyChain -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+    - cd NitroKeychain
+    - xctool -workspace NitroKeychain.xcworkspace -sdk iphonesimulator -scheme NitroKeychain test
