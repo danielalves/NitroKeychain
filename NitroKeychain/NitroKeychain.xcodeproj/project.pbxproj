@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12602E8F19BA64BF00036919 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12602E8E19BA64BF00036919 /* Foundation.framework */; };
+		12602E9D19BA64BF00036919 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12602E9C19BA64BF00036919 /* XCTest.framework */; };
+		12602E9E19BA64BF00036919 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12602E8E19BA64BF00036919 /* Foundation.framework */; };
+		12602EA319BA64BF00036919 /* libNitroKeychain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12602E8B19BA64BF00036919 /* libNitroKeychain.a */; };
+		12602EAB19BA64BF00036919 /* NitroKeychainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12602EAA19BA64BF00036919 /* NitroKeychainTests.m */; };
+		12602EB619BA650500036919 /* TNTKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 12602EB519BA650500036919 /* TNTKeychain.m */; };
+		12602EB819BA753D00036919 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12602EB719BA753D00036919 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12602EA119BA64BF00036919 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12602E8319BA64BF00036919 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12602E8A19BA64BF00036919;
+			remoteInfo = NitroKeychain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		12602E8919BA64BF00036919 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		12602E8B19BA64BF00036919 /* libNitroKeychain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNitroKeychain.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		12602E8E19BA64BF00036919 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		12602E9219BA64BF00036919 /* NitroKeychain-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NitroKeychain-Prefix.pch"; sourceTree = "<group>"; };
+		12602E9B19BA64BF00036919 /* NitroKeychainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NitroKeychainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12602E9C19BA64BF00036919 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		12602EAA19BA64BF00036919 /* NitroKeychainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NitroKeychainTests.m; sourceTree = "<group>"; };
+		12602EB419BA650500036919 /* TNTKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTKeychain.h; sourceTree = "<group>"; };
+		12602EB519BA650500036919 /* TNTKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTKeychain.m; sourceTree = "<group>"; };
+		12602EB719BA753D00036919 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12602E8819BA64BF00036919 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12602EB819BA753D00036919 /* Security.framework in Frameworks */,
+				12602E8F19BA64BF00036919 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12602E9819BA64BF00036919 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12602EA319BA64BF00036919 /* libNitroKeychain.a in Frameworks */,
+				12602E9D19BA64BF00036919 /* XCTest.framework in Frameworks */,
+				12602E9E19BA64BF00036919 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12602E8219BA64BF00036919 = {
+			isa = PBXGroup;
+			children = (
+				12602E9019BA64BF00036919 /* NitroKeychain */,
+				12602EA419BA64BF00036919 /* NitroKeychainTests */,
+				12602E8D19BA64BF00036919 /* Frameworks */,
+				12602E8C19BA64BF00036919 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12602E8C19BA64BF00036919 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12602E8B19BA64BF00036919 /* libNitroKeychain.a */,
+				12602E9B19BA64BF00036919 /* NitroKeychainTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12602E8D19BA64BF00036919 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12602E8E19BA64BF00036919 /* Foundation.framework */,
+				12602EB719BA753D00036919 /* Security.framework */,
+				12602E9C19BA64BF00036919 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		12602E9019BA64BF00036919 /* NitroKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				12602EB419BA650500036919 /* TNTKeychain.h */,
+				12602EB519BA650500036919 /* TNTKeychain.m */,
+				12602E9119BA64BF00036919 /* Supporting Files */,
+			);
+			path = NitroKeychain;
+			sourceTree = "<group>";
+		};
+		12602E9119BA64BF00036919 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12602E9219BA64BF00036919 /* NitroKeychain-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12602EA419BA64BF00036919 /* NitroKeychainTests */ = {
+			isa = PBXGroup;
+			children = (
+				12602EAA19BA64BF00036919 /* NitroKeychainTests.m */,
+			);
+			path = NitroKeychainTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12602E8A19BA64BF00036919 /* NitroKeychain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12602EAE19BA64BF00036919 /* Build configuration list for PBXNativeTarget "NitroKeychain" */;
+			buildPhases = (
+				12602E8719BA64BF00036919 /* Sources */,
+				12602E8819BA64BF00036919 /* Frameworks */,
+				12602E8919BA64BF00036919 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NitroKeychain;
+			productName = NitroKeychain;
+			productReference = 12602E8B19BA64BF00036919 /* libNitroKeychain.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		12602E9A19BA64BF00036919 /* NitroKeychainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12602EB119BA64BF00036919 /* Build configuration list for PBXNativeTarget "NitroKeychainTests" */;
+			buildPhases = (
+				12602E9719BA64BF00036919 /* Sources */,
+				12602E9819BA64BF00036919 /* Frameworks */,
+				12602E9919BA64BF00036919 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12602EA219BA64BF00036919 /* PBXTargetDependency */,
+			);
+			name = NitroKeychainTests;
+			productName = NitroKeychainTests;
+			productReference = 12602E9B19BA64BF00036919 /* NitroKeychainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12602E8319BA64BF00036919 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Daniel L. Alves";
+			};
+			buildConfigurationList = 12602E8619BA64BF00036919 /* Build configuration list for PBXProject "NitroKeychain" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 12602E8219BA64BF00036919;
+			productRefGroup = 12602E8C19BA64BF00036919 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12602E8A19BA64BF00036919 /* NitroKeychain */,
+				12602E9A19BA64BF00036919 /* NitroKeychainTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12602E9919BA64BF00036919 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12602E8719BA64BF00036919 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12602EB619BA650500036919 /* TNTKeychain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12602E9719BA64BF00036919 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12602EAB19BA64BF00036919 /* NitroKeychainTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12602EA219BA64BF00036919 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12602E8A19BA64BF00036919 /* NitroKeychain */;
+			targetProxy = 12602EA119BA64BF00036919 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12602EAC19BA64BF00036919 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		12602EAD19BA64BF00036919 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12602EAF19BA64BF00036919 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/NitroKeychain.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NitroKeychain/NitroKeychain-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		12602EB019BA64BF00036919 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/NitroKeychain.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NitroKeychain/NitroKeychain-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		12602EB219BA64BF00036919 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NitroKeychain/NitroKeychain-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		12602EB319BA64BF00036919 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NitroKeychain/NitroKeychain-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12602E8619BA64BF00036919 /* Build configuration list for PBXProject "NitroKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12602EAC19BA64BF00036919 /* Debug */,
+				12602EAD19BA64BF00036919 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12602EAE19BA64BF00036919 /* Build configuration list for PBXNativeTarget "NitroKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12602EAF19BA64BF00036919 /* Debug */,
+				12602EB019BA64BF00036919 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		12602EB119BA64BF00036919 /* Build configuration list for PBXNativeTarget "NitroKeychainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12602EB219BA64BF00036919 /* Debug */,
+				12602EB319BA64BF00036919 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12602E8319BA64BF00036919 /* Project object */;
+}
