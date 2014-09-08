@@ -17,8 +17,7 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		80ECE5AACC8D478CB61E0A6B /* libPods-NitroKeyChain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D3DCB07F3F4A8BBEE19B32 /* libPods-NitroKeyChain.a */; };
+		6003F5BC195388D20070C39A /* NitroKeychainDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* NitroKeychainDemoTests.m */; };
 		E4BEA14D19911F7400665C98 /* TNTDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BEA14C19911F7400665C98 /* TNTDetailViewController.m */; };
 		E4BEA150199120E000665C98 /* TNTEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BEA14F199120E000665C98 /* TNTEditorController.m */; };
 		E4BEA1521991554700665C98 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4BEA1511991554700665C98 /* Images.xcassets */; };
@@ -28,7 +27,6 @@
 		E4BEA15B1991567400665C98 /* KeychainAccessGroups2.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4BEA1571991567400665C98 /* KeychainAccessGroups2.plist */; };
 		E4BEA1601991568900665C98 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4BEA15C1991568900665C98 /* MainWindow.xib */; };
 		E4BEA1611991568900665C98 /* MainWindow2.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4BEA15E1991568900665C98 /* MainWindow2.xib */; };
-		FE7455B9BF794FB5A7AD11F8 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E19FF37251C46A890608C11 /* libPods-Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,29 +40,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3579A9EE527E48639BA642D1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		5E19FF37251C46A890608C11 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6003F58A195388D20070C39A /* NitroKeyChain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NitroKeyChain.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* NitroKeychainDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NitroKeychainDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6003F595195388D20070C39A /* NitroKeyChain-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NitroKeyChain-Info.plist"; sourceTree = "<group>"; };
+		6003F595195388D20070C39A /* NitroKeychainDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NitroKeychainDemo-Info.plist"; sourceTree = "<group>"; };
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6003F59B195388D20070C39A /* NitroKeyChain-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NitroKeyChain-Prefix.pch"; sourceTree = "<group>"; };
+		6003F59B195388D20070C39A /* NitroKeychainDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NitroKeychainDemo-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* TNTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNTAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* TNTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNTAppDelegate.m; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* NitroKeychainDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NitroKeychainDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		6003F5B7195388D20070C39A /* NitroKeychainDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NitroKeychainDemoTests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
-		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		8513DAC4759241AFA7CC85FC /* NitroKeyChain.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NitroKeyChain.podspec; path = ../NitroKeyChain.podspec; sourceTree = "<group>"; };
-		90D3DCB07F3F4A8BBEE19B32 /* libPods-NitroKeyChain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NitroKeyChain.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3C574D6BCF149EC97E2741A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		D2B0D2DEFC174C6A9E50E548 /* Pods-Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.xcconfig"; path = "Pods/Pods-Tests.xcconfig"; sourceTree = "<group>"; };
-		D941EE1BAF384229B60FB9AA /* Pods-NitroKeyChain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NitroKeyChain.xcconfig"; path = "Pods/Pods-NitroKeyChain.xcconfig"; sourceTree = "<group>"; };
+		6003F5BB195388D20070C39A /* NitroKeychainDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NitroKeychainDemoTests.m; sourceTree = "<group>"; };
 		E4BEA14B19911F7400665C98 /* TNTDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTDetailViewController.h; sourceTree = "<group>"; };
 		E4BEA14C19911F7400665C98 /* TNTDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNTDetailViewController.m; sourceTree = "<group>"; };
 		E4BEA14E199120E000665C98 /* TNTEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTEditorController.h; sourceTree = "<group>"; };
@@ -86,7 +76,6 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				80ECE5AACC8D478CB61E0A6B /* libPods-NitroKeyChain.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +86,6 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				FE7455B9BF794FB5A7AD11F8 /* libPods-Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,21 +95,18 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
-				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
-				6003F593195388D20070C39A /* NitroKeyChain */,
-				6003F5B5195388D20070C39A /* Tests */,
+				6003F593195388D20070C39A /* NitroKeychainDemo */,
+				6003F5B5195388D20070C39A /* NitroKeychainDemoTests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				D941EE1BAF384229B60FB9AA /* Pods-NitroKeyChain.xcconfig */,
-				D2B0D2DEFC174C6A9E50E548 /* Pods-Tests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* NitroKeyChain.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F58A195388D20070C39A /* NitroKeychainDemo.app */,
+				6003F5AE195388D20070C39A /* NitroKeychainDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,13 +118,11 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				90D3DCB07F3F4A8BBEE19B32 /* libPods-NitroKeyChain.a */,
-				5E19FF37251C46A890608C11 /* libPods-Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6003F593195388D20070C39A /* NitroKeyChain */ = {
+		6003F593195388D20070C39A /* NitroKeychainDemo */ = {
 			isa = PBXGroup;
 			children = (
 				E4BEA1531991566C00665C98 /* Resources */,
@@ -152,47 +135,36 @@
 				E4BEA1511991554700665C98 /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
-			path = NitroKeyChain;
+			path = NitroKeychainDemo;
 			sourceTree = "<group>";
 		};
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6003F595195388D20070C39A /* NitroKeyChain-Info.plist */,
+				6003F595195388D20070C39A /* NitroKeychainDemo-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
-				6003F59B195388D20070C39A /* NitroKeyChain-Prefix.pch */,
+				6003F59B195388D20070C39A /* NitroKeychainDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6003F5B5195388D20070C39A /* Tests */ = {
+		6003F5B5195388D20070C39A /* NitroKeychainDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5BB195388D20070C39A /* Tests.m */,
+				6003F5BB195388D20070C39A /* NitroKeychainDemoTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
-			path = Tests;
+			path = NitroKeychainDemoTests;
 			sourceTree = "<group>";
 		};
 		6003F5B6195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5B7195388D20070C39A /* Tests-Info.plist */,
+				6003F5B7195388D20070C39A /* NitroKeychainDemoTests-Info.plist */,
 				6003F5B8195388D20070C39A /* InfoPlist.strings */,
-				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
-			isa = PBXGroup;
-			children = (
-				8513DAC4759241AFA7CC85FC /* NitroKeyChain.podspec */,
-				C3C574D6BCF149EC97E2741A /* README.md */,
-				3579A9EE527E48639BA642D1 /* LICENSE */,
-			);
-			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
 		E4BEA1531991566C00665C98 /* Resources */ = {
@@ -211,11 +183,10 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6003F589195388D20070C39A /* NitroKeyChain */ = {
+		6003F589195388D20070C39A /* NitroKeychainDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "NitroKeyChain" */;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "NitroKeychainDemo" */;
 			buildPhases = (
-				E8B5CE4228464B8A99F45C57 /* Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
@@ -225,29 +196,27 @@
 			);
 			dependencies = (
 			);
-			name = NitroKeyChain;
+			name = NitroKeychainDemo;
 			productName = NitroKeyChain;
-			productReference = 6003F58A195388D20070C39A /* NitroKeyChain.app */;
+			productReference = 6003F58A195388D20070C39A /* NitroKeychainDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6003F5AD195388D20070C39A /* Tests */ = {
+		6003F5AD195388D20070C39A /* NitroKeychainDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "NitroKeychainDemoTests" */;
 			buildPhases = (
-				7B73A50909F244E78E3C5A10 /* Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				31E6E30FD401451FAAD3F78E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				6003F5B4195388D20070C39A /* PBXTargetDependency */,
 			);
-			name = Tests;
+			name = NitroKeychainDemoTests;
 			productName = NitroKeyChainTests;
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* NitroKeychainDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -265,7 +234,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "NitroKeyChain" */;
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "NitroKeychainDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -278,8 +247,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6003F589195388D20070C39A /* NitroKeyChain */,
-				6003F5AD195388D20070C39A /* Tests */,
+				6003F589195388D20070C39A /* NitroKeychainDemo */,
+				6003F5AD195388D20070C39A /* NitroKeychainDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -311,36 +280,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		31E6E30FD401451FAAD3F78E /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7B73A50909F244E78E3C5A10 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		9B90E29CE87445678A6CBE17 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,22 +292,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-NitroKeyChain-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E8B5CE4228464B8A99F45C57 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Pods-NitroKeychainDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -389,7 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				6003F5BC195388D20070C39A /* NitroKeychainDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,7 +322,7 @@
 /* Begin PBXTargetDependency section */
 		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6003F589195388D20070C39A /* NitroKeyChain */;
+			target = 6003F589195388D20070C39A /* NitroKeychainDemo */;
 			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -513,14 +437,13 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D941EE1BAF384229B60FB9AA /* Pods-NitroKeyChain.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NitroKeyChain/NitroKeyChain-Prefix.pch";
-				INFOPLIST_FILE = "NitroKeyChain/NitroKeyChain-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "NitroKeychainDemo/NitroKeychainDemo-Prefix.pch";
+				INFOPLIST_FILE = "NitroKeyChainDemo/NitroKeychainDemo-Info.plist";
+				PRODUCT_NAME = NitroKeychainDemo;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -528,14 +451,13 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D941EE1BAF384229B60FB9AA /* Pods-NitroKeyChain.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NitroKeyChain/NitroKeyChain-Prefix.pch";
-				INFOPLIST_FILE = "NitroKeyChain/NitroKeyChain-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "NitroKeychainDemo/NitroKeychainDemo-Prefix.pch";
+				INFOPLIST_FILE = "NitroKeyChainDemo/NitroKeychainDemo-Info.plist";
+				PRODUCT_NAME = NitroKeychainDemo;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -543,21 +465,19 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2B0D2DEFC174C6A9E50E548 /* Pods-Tests.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NitroKeyChain.app/NitroKeyChain";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NitroKeychainDemo.app/NitroKeychainDemo";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				INFOPLIST_FILE = "NitroKeychainDemoTests/NitroKeychainDemoTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -566,17 +486,15 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2B0D2DEFC174C6A9E50E548 /* Pods-Tests.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NitroKeyChain.app/NitroKeyChain";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NitroKeychainDemo.app/NitroKeychainDemo";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				INFOPLIST_FILE = "NitroKeychainDemoTests/NitroKeychainDemoTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -586,7 +504,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6003F585195388D10070C39A /* Build configuration list for PBXProject "NitroKeyChain" */ = {
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "NitroKeychainDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5BD195388D20070C39A /* Debug */,
@@ -595,7 +513,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "NitroKeyChain" */ = {
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "NitroKeychainDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5C0195388D20070C39A /* Debug */,
@@ -604,7 +522,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "Tests" */ = {
+		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "NitroKeychainDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5C3195388D20070C39A /* Debug */,

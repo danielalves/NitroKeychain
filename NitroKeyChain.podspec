@@ -7,12 +7,14 @@ Pod::Spec.new do |s|
                        provides commonly needed features.
                        DESC
   s.homepage         = "https://github.com/danielalves/NitroKeychain"
-  s.license          = 'MIT'
-  s.author           = { "globo.tv app team" => "globo.tv.app@corp.globo.com" }
+  s.license          = { :type => "MIT", :file => "LICENSE" }
+  s.authors          = "Daniel L. Alves", "Gustavo Barbosa"
+  s.social_media_url = "http://twitter.com/alveslopesdan"
+  s.social_media_url = "http://twitter.com/gustavocsb"
   s.source           = { :git => "https://github.com/danielalves/NitroKeychain.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '6.0'
   s.requires_arc = true
-  s.source_files = 'Pod/Classes'
-  s.frameworks   = 'Security'
+  s.source_files = "NitroKeychain/NitroKeychain"
+  s.frameworks   = "Security"
 end
