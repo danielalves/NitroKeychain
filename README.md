@@ -12,8 +12,15 @@ Saving
 ------
 
 ```objc
-[TNTKeychain save:@"com.myapp.service.id" 
-             data:@"my-ultra-secret-token"];
+[TNTKeychain save: @"com.myapp.service.id" 
+             data: @"my-ultra-secret-token"];
+             
+// Or, if you want to make this item available across apps, specify 
+// an access group:
+[TNTKeychain save: @"com.myapp.service.id" 
+             data: @"my-ultra-secret-token"
+      accessGroup: @"super-company"];
+
 ```
 
 - All keychain items are stored using the kSecClassGenericPassword Keychain Item class.
@@ -24,15 +31,15 @@ Loading
 -------
 
 ```objc
-NSString *token = [TNTKeychain load:@"com.myapp.service.id"];
-NSLog(@"%@", token);
+NSString *token = [TNTKeychain load: @"com.myapp.service.id"];
+NSLog( @"%@", token );
 ```
 
 Deleting
 --------
 
 ```objc
-[TNTKeychain delete:@"com.myapp.service.id"];
+[TNTKeychain delete: @"com.myapp.service.id"];
 ```
 
 Simple as that :+1:
