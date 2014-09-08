@@ -376,6 +376,7 @@
 				12602EB019BA64BF00036919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		12602EB119BA64BF00036919 /* Build configuration list for PBXNativeTarget "NitroKeychainTests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +385,7 @@
 				12602EB319BA64BF00036919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
