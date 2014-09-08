@@ -58,8 +58,8 @@ Installation
 pod 'NitroKeychain'
 ```
 
-Author
-------
+Authors
+-------
 
 - [Daniel L. Alves](http://github.com/danielalves) ([@alveslopesdan](https://twitter.com/alveslopesdan))
 - [Gustavo Barbosa](http://github.com/barbosa) ([@gustavocsb](https://twitter.com/gustavocsb))
