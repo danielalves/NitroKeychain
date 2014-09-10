@@ -106,6 +106,9 @@ static NSOperationQueue *serializerQueue;
     NSData *dataToArchive = nil;
     @try
     {
+        if( ![data conformsToProtocol: @protocol( NSCoding )] )
+            return NO;
+        
         dataToArchive = [NSKeyedArchiver archivedDataWithRootObject: data];
     }
     @catch( NSException *ex )
