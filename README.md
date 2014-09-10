@@ -2,7 +2,7 @@ NitroKeychain
 =============
 [![Version](http://cocoapod-badges.herokuapp.com/v/NitroKeychain/badge.png)](http://cocoadocs.org/docsets/NitroKeychain)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/NitroKeychain/badge.png)](http://cocoadocs.org/docsets/NitroKeychain)
-<!-- [![TravisCI](https://travis-ci.org/danielalves/NitroKeychain.svg?branch=master)](https://travis-ci.org/danielalves/NitroKeychain) -->
+[![TravisCI](https://travis-ci.org/danielalves/NitroKeychain.svg?branch=master)](https://travis-ci.org/danielalves/NitroKeychain)
 
 **NitroKeychain** is a thin, yet powerful, abstraction layer on top of iOS keychain that provides commonly needed features. **NitroKeychain** is also thread safe.
 
@@ -35,12 +35,16 @@ NSString *token = [TNTKeychain load: @"com.myapp.service.id"];
 NSLog( @"%@", token );
 ```
 
+- `load` will return `nil` if no keychain item is found with such id.
+
 Deleting
 --------
 
 ```objc
 [TNTKeychain delete: @"com.myapp.service.id"];
 ```
+
+- `delete` does nothing if no keychain item is found with such id.
 
 Simple as that :+1:
 
