@@ -4,4 +4,4 @@ before_script:
     - brew install xctool && brew cleanup xctool
 script:
     - cd NitroKeychain
-    - xctool -project NitroKeychain.xcodeproj -sdk iphonesimulator -scheme NitroKeychain test
+    - xcodebuild -project NitroKeychain.xcodeproj -scheme NitroKeychain -destination 'platform=iOS Simulator,name=iPhone Retina (4-inch)' test
