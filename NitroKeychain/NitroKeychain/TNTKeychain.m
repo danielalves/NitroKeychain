@@ -93,12 +93,12 @@ static NSOperationQueue *serializerQueue;
 
 #pragma mark - Save
 
-+( BOOL )save:( NSString * )keychainItemId data:( id )data
++( BOOL )save:( nonnull NSString * )keychainItemId data:( nullable id )data
 {
     return [self save: keychainItemId data: data accessGroup: nil];
 }
 
-+( BOOL )save:( NSString * )keychainItemId data:( id )data accessGroup:( NSString * )accessGroup
++( BOOL )save:( nonnull NSString * )keychainItemId data:( nullable id )data accessGroup:( nullable NSString * )accessGroup
 {
     if( keychainItemId.length == 0 || data == nil )
         return NO;
@@ -136,12 +136,12 @@ static NSOperationQueue *serializerQueue;
 
 #pragma mark - Load
 
-+( id )load:( NSString * )keychainItemId
++( nullable id )load:( nonnull NSString * )keychainItemId
 {
     return [self load: keychainItemId accessGroup: nil];
 }
 
-+( id )load:( NSString * )keychainItemId accessGroup:( NSString * )accessGroup
++( nullable id )load:( nonnull NSString * )keychainItemId accessGroup:( nullable NSString * )accessGroup
 {
     if( keychainItemId.length == 0 )
         return nil;
@@ -176,12 +176,12 @@ static NSOperationQueue *serializerQueue;
 
 #pragma mark - Delete
 
-+( void )delete:( NSString * )keychainItemId
++( void )delete:( nonnull NSString * )keychainItemId
 {
     [self delete: keychainItemId accessGroup: nil];
 }
 
-+( void )delete:( NSString * )keychainItemId accessGroup:( NSString * )accessGroup
++( void )delete:( nonnull NSString * )keychainItemId accessGroup:( nullable NSString * )accessGroup
 {
     if( keychainItemId.length == 0 )
         return;

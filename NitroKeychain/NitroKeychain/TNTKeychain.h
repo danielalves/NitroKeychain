@@ -29,7 +29,7 @@
  *  @see +delete:
  *  @see +delete:accessGroup:
  */
-+( BOOL )save:( NSString * )keychainItemId data:( id )data;
++( BOOL )save:( nonnull NSString * )keychainItemId data:( nullable id )data;
 
 /**
  *  Stores data into the keychain associating it to keychainItemId. If there is
@@ -54,7 +54,7 @@
  *  @see +delete:
  *  @see +delete:accessGroup:
  */
-+( BOOL )save:( NSString * )keychainItemId data:( id )data accessGroup:( NSString * )accessGroup;
++( BOOL )save:( nonnull NSString * )keychainItemId data:( nullable id )data accessGroup:( nullable NSString * )accessGroup;
 
 /**
  *  Loads the data associated with a keychain item.
@@ -70,7 +70,7 @@
  *  @see +delete:
  *  @see +delete:accessGroup:
  */
-+( id )load:( NSString * )keychainItemId;
++( nullable id )load:( nonnull NSString * )keychainItemId;
 
 /**
  *  Loads the data associated with a keychain item.
@@ -88,7 +88,7 @@
  *  @see +delete:
  *  @see +delete:accessGroup:
  */
-+( id )load:( NSString * )keychainItemId accessGroup:( NSString * )accessGroup;
++( nullable id )load:( nonnull NSString * )keychainItemId accessGroup:( nullable NSString * )accessGroup;
 
 /**
  *  Deletes the specified keychain item. This method does nothing if keychainItemId
@@ -102,7 +102,7 @@
  *  @see +load:accessGroup:
  *  @see +delete:accessGroup:
  */
-+( void )delete:( NSString * )keychainItemId;
++( void )delete:( nonnull NSString * )keychainItemId;
 
 /**
  *  Deletes the specified keychain item. This method does nothing if keychainItemId
@@ -118,6 +118,6 @@
  *  @see +load:accessGroup:
  *  @see +delete:
  */
-+( void )delete:( NSString * )keychainItemId accessGroup:( NSString * )accessGroup;
++( void )delete:( nonnull NSString * )keychainItemId accessGroup:( nullable NSString * )accessGroup;
 
 @end
