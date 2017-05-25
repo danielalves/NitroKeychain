@@ -11,6 +11,8 @@ There are 3 operations: `save`, `load` and `delete`, as you can see below:
 Saving
 ------
 
+#### Objective-C
+
 ```objc
 [TNTKeychain save: @"com.myapp.service.id" 
              data: @"my-ultra-secret-token"];
@@ -23,12 +25,26 @@ Saving
 
 ```
 
+#### Swift
+
+```swift
+TNTKeychain.save("com.myapp.service.id", data: "my-ultra-secret-token")
+             
+// Or, if you want to make this item available across apps, specify 
+// an access group:
+TNTKeychain.save("com.myapp.service.id", 
+                  data: "my-ultra-secret-token", 
+                  accessGroup: "super-company")
+```
+
 - All keychain items are stored using the kSecClassGenericPassword Keychain Item class.
 - `data` can be any value compatible with `NSKeyedArchiver`/`NSKeyedUnarchiver`.
 - If there is already some data associated with a keychain item ID, it will be updated.
 
 Loading
 -------
+
+#### Objective-C
 
 ```objc
 NSString *token = [TNTKeychain load: @"com.myapp.service.id"];
@@ -37,14 +53,29 @@ NSLog( @"%@", token );
 
 - `load` will return `nil` if no keychain item is found with such id.
 
+#### Swift
+
+```swift
+let token = TNTKeychain.load("com.myapp.service.id")
+print(token)
+```
+
 Deleting
 --------
+
+#### Objective-C
 
 ```objc
 [TNTKeychain delete: @"com.myapp.service.id"];
 ```
 
 - `delete` does nothing if no keychain item is found with such id.
+
+#### Swift
+
+```swift
+TNTKeychain.delete("com.myapp.service.id")
+```
 
 Simple as that :+1:
 
