@@ -31,6 +31,9 @@ static NSString * const kTestServiceName = @"tnt.keychain.test";
 
 #pragma mark - NitroKeychainTests Implementation
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wnonnull"
+
 @implementation NitroKeychainTests
 
 #pragma mark - Test Lifecycle
@@ -201,3 +204,5 @@ static NSString * const kTestServiceName = @"tnt.keychain.test";
 }
 
 @end
+
+#pragma clang diagnostic pop

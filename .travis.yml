@@ -1,7 +1,4 @@
 language: objective-c
-before_script:
-    - brew update
-    - brew install xctool && brew cleanup xctool
 script:
     - cd NitroKeychain
     - xcodebuild -project NitroKeychain.xcodeproj -scheme NitroKeychain -destination 'platform=iOS Simulator,name=iPhone Retina (4-inch)' test
